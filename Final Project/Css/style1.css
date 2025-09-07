@@ -1,0 +1,317 @@
+body{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.phone:hover, .change:hover, .navbar-toggler:hover a,.navbar-toggler:hover .navbar-toggler-icon{
+    color: #de1010 !important; 
+}
+.phone i:hover, .dropdown .dropdown-item:hover, .dropdown .dropdown-toggle:hover,.new-hover:hover h6{
+    color: #de1010 !important;
+}
+.color-active{
+    color: #de1010;
+}
+.colo-red{
+    background-color: #de1010;
+}
+.bg-white{
+    background-color: white;
+    z-index: 100;
+}
+.bg-light-1{
+    background-color: #ebeef0;
+}
+.img-edit{
+    width: 20px;
+    height: 20px;
+}
+.nav-item:hover span{
+    text-decoration: underline;
+}
+.nav-item:hover i{
+    color: black !important;
+}
+.offcanvas-header h5,.navbar-toggler a{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.search-box .form-select:focus, .search-box input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler, .navbar-toggler-icon{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+.dropdown-menu {
+    position: absolute !important;
+}
+.special{
+    flex: 0;
+}
+.card-hover:hover i{
+    color: black !important;
+}
+.d-show {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.new-hover:hover .d-show {
+  opacity: 1;
+}
+.d-show i {
+  transform: translateX(-15px); 
+  transition: transform 0.1s linear;
+}
+
+.new-hover:hover .d-show i {
+  transform: translateX(0);
+}
+
+.bold{
+    font-weight: bold;
+}
+.padding-left{
+    padding-left: 10%;
+}
+.text-special{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #de1010;
+}
+.text-special:hover{
+    text-decoration-style: dashed; 
+    text-decoration-line: underline;
+}
+.carousel-inner button:hover{
+    background-color: transparent !important;
+    color: white !important;
+    border-color: white !important;
+}
+.bg-1,
+.bg-2{
+    background-size: cover;
+}
+.bg-1{
+    background-image: url(../Images/banner1-demo1.jpg);
+}
+.bg-2{
+    background-image: url(../Images/banner2-demo1.jpg);
+}
+.btn-style{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+}
+.fs-new{
+    font-size: 50px !important;
+}
+.w-30{
+    width: 33.3%;
+}
+.pos{
+    top: 5%;
+}
+.pos-2{
+    top: 3%;
+    right: 5%;
+}
+.pos-2 i, .pos-3 i{
+    font-size: 12px;
+}
+.card .pos-2 a {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .pos-2 a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.pos-2 a:hover i {
+  background: #000;
+  color: #fff;
+}
+.card:hover .pos-2 a:nth-child(1) { transition-delay: 0.1s; }
+.card:hover .pos-2 a:nth-child(2) { transition-delay: 0.2s; }
+.card:hover .pos-2 a:nth-child(3) { transition-delay: 0.3s; }
+.card:hover .pos-2 a:nth-child(4) { transition-delay: 0.4s; }
+.tooltip-box {
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  white-space: nowrap;
+  width: 90px;
+  text-align: center;
+}
+.tooltip-box::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.pos-2 a:hover .tooltip-box {
+  opacity: 1;
+  visibility: visible;
+  right: 125%;
+}
+.icon-style{
+    font-size: 12px;
+}
+.owl-nav {
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.owl-carousel:hover .owl-nav {
+  visibility: visible;
+}
+.owl-nav button:hover .arr-left {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.5s ease;
+}
+.owl-nav button:hover .arr-right {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.5s ease;
+}
+.left-10{
+    left: 5%;
+    top: 10%;
+    background-color: #f05025;
+}
+.bg-col{
+    background-color: #f05025;
+}
+.pos-3{
+    bottom: 0%;
+    right: 0;
+    justify-content: space-around;
+    align-items: end;
+}
+.card .pos-3 a {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .pos-3 a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.pos-3 a:hover i, .pos-3 a:hover div {
+  background: #000;
+  color: #fff;
+}
+.card:hover .pos-3 a:nth-child(1) { transition-delay: 0.1s; }
+.card:hover .pos-3 a:nth-child(2) { transition-delay: 0.2s; }
+.card:hover .pos-3 a:nth-child(3) { transition-delay: 0.3s; }
+.card:hover .pos-3 a:nth-child(4) { transition-delay: 0.4s; }
+.tooltip-box-2{
+  position: absolute;
+  bottom: 110%; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  white-space: nowrap;
+  width: 90px;
+  text-align: center;
+  z-index: 10;
+}
+.tooltip-box-2::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.pos-3 a:hover .tooltip-box-2 {
+  opacity: 1;
+  visibility: visible;
+  bottom: 130%;
+}
+.font-10{
+    font-size: 14px;
+}
+.new-card .img-box {
+  overflow: hidden;
+}
+.new-card img {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1) rotate(2deg);
+}
+.when-hover{
+    text-transform: uppercase;
+}
+.when-hover:hover{
+    color: white !important;
+    background-color: black;
+}
+.email-subscribe ::placeholder{
+    color:  lightgrey !important;
+}
+.email-subscribe input:focus{
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+.border-color{
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+.w-45{
+    width: 45%;
+}
+.h-new{
+  height: 30px;
+}
+
+.no-focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+}
+
+.no-focus:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

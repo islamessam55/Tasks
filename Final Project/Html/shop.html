@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/style1.css">
+    <link rel="stylesheet" href="../Css/style2.css">
+  </head>
+  <body>
+<!-- Header for md+ (Desktop) -->
+<header class="py-4 border-bottom position-sticky top-0 bg-white d-none d-md-block">
+  <div class="container d-flex align-items-center justify-content-between w-100">
+
+    <!-- Left side -->
+    <div class="d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <div class="logo ms-auto mb-0"><img class="w-50" src="../Images/logo (2).png" alt=""></div>
+
+      <!-- Phone -->
+      <div class="phone d-flex align-items-center w-50">
+        <i class="fa-solid fa-phone fs-1"></i>
+        <a href="" class="text-decoration-none text-black change">
+          <p class="mb-0">Contact us 24/7</p>
+          <p class="mb-0">(+92) 3942 7879</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <form class="d-flex search-box mx-3 bg-body-secondary w-25 p-2 rounded">
+      <select class="form-select border-0 bg-body-secondary border-end rounded-0" style="max-width:150px;">
+        <option value="">All Categories</option>
+        <option value="autopart">Autopart</option>
+        <option value="fashion">Fashion</option>
+        <option value="laptop">Laptop & Computer</option>
+        <option value="phone">Phone & Tablet</option>
+        <option value="tv">TV, Audio - Video</option>
+      </select>
+      <input class="form-control border-0 bg-body-secondary rounded-0" type="search" placeholder="Search for products">
+      <button class="btn btn-dark text-white" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <!-- Right side -->
+    <div class="d-flex align-items-center ">
+      <!-- Language & Currency -->
+      <div class="dropdown me-3">
+        <a class="dropdown-toggle change text-decoration-none text-black" href="#" role="button" data-bs-toggle="dropdown">
+          <img src="../Images/english.png" width="20"> English
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><img src="../Images/espanol.png" alt=""> Español</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../Images/francais.png" alt=""> Français</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../Images/portugues.png" alt=""> Português</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown me-3">
+        <a class="dropdown-toggle change text-decoration-none text-black" href="#" role="button" data-bs-toggle="dropdown">
+          USD
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+          <li><a class="dropdown-item" href="#">BRL</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <a href="#" class="me-3 text-decoration-none change text-black">
+        <i class="fa fa-user me-1 fs-5"></i> Account
+      </a>
+
+      <!-- Wishlist -->
+      <a href="#" class="icon-btn text-dark change position-relative me-3">
+        <i class="fa-regular fa-heart fs-5"></i>
+        <div class="position-absolute top-0 start-100 translate-middle badge rounded-pill colo-red">0</div>
+      </a>
+
+      <!-- Cart -->
+      <a href="#" class="icon-btn text-dark change position-relative">
+        <i class="fa fa-shopping-cart fs-5"></i>
+        <div class="position-absolute top-0 start-100 translate-middle badge rounded-pill colo-red">0</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Header for sm (Mobile) -->
+<header class="py-3 border-bottom bg-white d-flex d-md-none align-items-center justify-content-between px-3">
+  <!-- Hamburger -->
+  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+    <i class="fa fa-bars fs-4"></i>
+  </button>
+
+  <!-- Logo (center) -->
+  <a href="#" class="navbar-brand mx-auto">
+    <img src="../Images/logo (2).png" alt="Logo" style="height:40px;">
+  </a>
+
+  <!-- Icons (right) -->
+  <div class="d-flex align-items-center">
+    <a href="#" class="position-relative me-3 text-dark">
+      <i class="fa-regular fa-heart fs-5"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+    <a href="#" class="position-relative text-dark">
+      <i class="fa fa-shopping-cart fs-5"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- Offcanvas Menu (mobile) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <button class="navbar-toggler border-end me-3 rounded-0 py-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon change"></span>
+      <a class="navbar-brand text-black" href="#">Shop by Categories</a>
+    </button>
+  </div>
+
+  <div class="offcanvas-body">
+    <!-- Add everything here from big header (phone, search, account, links, categories, etc.) -->
+    <form class="d-flex mb-3 bg-body-secondary p-2 rounded">
+      <input class="form-control border-0 bg-body-secondary rounded-0" type="search" placeholder="Search...">
+      <button class="btn btn-dark text-white" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <ul class="list-unstyled">
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2">Homepages</a></li>
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2">Categories</a></li>
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2">Products</a></li>
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2">Pages</a></li>
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2">About Us</a></li>
+      <li><a href="#" class="text-dark text-decoration-none d-block py-2"><i class="fa-solid fa-tag me-1"></i> Best Discount</a></li>
+    </ul>
+  </div>
+</div>
+
+<nav class="navbar px-0 py-0 border-bottom d-none d-md-flex">
+  <div class="container">
+    <button class="navbar-toggler border-end me-3 rounded-0 py-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon change"></span>
+      <a class="navbar-brand text-black" href="#">Shop by Categories</a>
+    </button>
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header bg-black text-white fs-5 p-3">
+        <i class="fa-solid fa-bars pe-4"></i>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Shop by Categories</h5>
+      </div>
+      <div class="offcanvas-body p-0">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-1.png" class="img-edit me-3" alt=""> 
+                <span>Fashion</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-2.png" class="img-edit me-3" alt=""> 
+                <span>Phone & Tablets</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-3.png" class="img-edit me-3" alt=""> 
+                <span>Laptop & Computer</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-4.png" class="img-edit me-3" alt=""> 
+                <span>TV,Audio - Video</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-5.png" class="img-edit me-3" alt=""> 
+                <span>Camera & Photo</span> 
+              </div>
+              </a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-6.png" class="img-edit me-3" alt=""> 
+                <span>Home & Decor</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-7.png" class="img-edit me-3" alt=""> 
+                <span>Beauty & Health</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+          <li class="nav-item py-1 px-3 border-bottom">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-8.png" class="img-edit me-3" alt=""> 
+                <span>Game Accessories</span> 
+              </div></a>
+          </li>
+          <li class="nav-item py-1 px-3">
+            <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">
+              <div>
+                <img src="../Images/icon-menu-9.png" class="img-edit me-3" alt=""> 
+                <span>Autopart</span> 
+              </div>
+              <i class="fa-solid fa-chevron-right fs-7 text-secondary"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-between">
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle color-active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Homepages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link text-black change" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item change me-4">
+          <a class="nav-link change text-black" href="#"><i class="fa-solid fa-tag"></i> Best Discount</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recently viewed
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+      </ul>
+  </div>
+</nav>
+<a id="topBtn" class="text-decoration-none bg-black text-white py-2 rounded-1 border-0 position-fixed bottom-0 end-0 mb-2 me-2 d-none d-md-block px-2">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<div class="container py-4">
+    <p class="font-10"><a href="index1.html" class="text-decoration-none text-black">Home</a><i class="fa-solid fa-chevron-right text-body-tertiary"></i> <span class="text-body-tertiary">Shop</span></p>
+    <h2>Shop</h2>
+    <div class="d-flex justify-content-between py-5 flex-sm-wrap flex-wrap">
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Autopart</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Beauty & Health</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Electronic</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Fashion</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Game Accessories</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Home & Decor</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Laptop & Computer</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">Phone & Tablet</a>
+        <a href="" class="bg-light-1 text-decoration-none text-black py-2 px-3 rounded-1 new-edit font-10 mb-2" style="border: 1px solid transparent;">TV, Audio - Video</a>
+    </div>
+    <div class="row">
+        <div class="col-2 d-none d-md-block">
+            <h5 class="mb-3">Colors</h5>
+            <ul class="list-unstyled mb-5">
+                <a href="" class="text-decoration-none text-black change mb-3 font-10">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-black me-2"></span> Black
+                        </span>
+                        <span class="text-muted font-10">95</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-primary me-2"></span> Blue
+                        </span>
+                        <span class="text-muted">11</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-brown me-2"></span> Brown
+                        </span>
+                        <span class="text-muted">26</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-cool me-2"></span>Cool Pink
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-deep me-2"></span> Deep Purple
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+                <a href="" class="text-decoration-none text-black change mb-2">
+                    <li class="d-flex justify-content-between">
+                        <span class="d-flex align-items-center">
+                            <span class="color-box bg-burg me-2"></span> Burgundy
+                        </span>
+                        <span class="text-muted">1</span>
+                    </li>
+                </a>
+            </ul>
+            <h5 class="mb-3">Brands</h5>
+            <input type="text" placeholder="search" class="form-control mb-3">
+            <div class="height-50 mb-5">
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+                <div class="mb-2 form-check font-10 change">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Amazon <span>(28)</span></label>
+                </div>
+            </div>
+            <h5 class="mb-3">Price</h5>
+            <div>
+                <div class="mb-2 form-check font-10 change text-black">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">0 - $100</label>
+                </div>
+                <div class="mb-2 form-check font-10 change text-black">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">$100 - $200</label>
+                </div>
+                <div class="mb-2 form-check font-10 change text-black">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">$200 - $500</label>
+                </div>
+                <div class="mb-2 form-check font-10 change text-black">
+                    <input type="checkbox" class="form-check-input border-black" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">$500+</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="d-flex justify-content-end mb-3">
+                <a href="#" class="text-decoration-none text-black"><i class="fas fa-th fs-5"></i></a>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-list fs-5"></i></a>
+            </div>
+            <div class="d-flex flex-wrap w-100">
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+                <div class="card position-relative w-25">
+        <a href="#">
+          <img src="../Images/fashion-5-700x700.jpg" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+        <a href="#" class="text-decoration-none text-black change"><h7>Nike Air Max Unisex SYSTM Men Sneaker Shoes</h7></a>
+        <p>$148</p>
+        <div class="position-absolute pos badge rounded-1 py-2 bg-col">Hot</div>
+        <div class="position-absolute d-flex flex-column pos-2">
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Wishlist</div>
+            <i class="fa-regular fa-heart bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Compare</div>
+            <i class="fa-solid fa-arrow-right-arrow-left bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center mb-2 text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Quick View</div>
+            <i class="fa-solid fa-magnifying-glass bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+          <a href="#" class="position-relative d-flex align-items-center text-decoration-none text-dark">
+            <div class="tooltip-box bg-black text-white rounded-1 px-2 py-1 me-2">Add to cart</div>
+            <i class="fa-solid fa-cart-shopping bg-light-1 px-2 py-2 rounded-1 w-100"></i>
+          </a>
+      </div>
+      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark">
+  <div class="container">
+    <div class="row text-white py-5 gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <img src="../Images/logo.png" class="w-50 mb-4" alt="">
+        <p class="mb-2 font-10 text-secondary">
+          <i class="fa-solid fa-location-dot me-1"></i> 29 SE 2nd Ave, Miami Florida 33131, United States
+        </p>
+        <p class="mb-2 font-10 text-secondary">
+          <i class="fa-regular fa-envelope me-2"></i> info@example.com
+        </p>
+        <a href="#" class="change text-decoration-none text-white">
+          <h5>(+92) 3942 7879</h5>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <h6 class="mb-3">SHOPPING</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Shop by Brand</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Offers</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Track order</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Size Guide</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="mb-3">INFORMATION</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Track Order</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Help</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="mb-3">ACCOUNT</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Cart</a></li>
+              <li><a href="#" class="text-white text-decoration-none">My account</a></li>
+              <li><a href="#" class="text-white text-decoration-none">My orders</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Affiliate Program</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6 class="mb-4">Let’s keep in touch</h6>
+        <div class="email-subscribe mb-3">
+          <form class="d-flex align-items-center border-color">
+            <input type="email" class="form-control me-2 bg-transparent border-0" 
+                   placeholder="enter your email address" required>
+            <button type="submit" class="text-white btn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+        <div>
+          <a href="#" class="text-white pe-3"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="text-white pe-3"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="text-white pe-3"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="text-white pe-3"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="text-white pe-3"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row border border-secondary-subtle py-4 gy-3 text-white text-center text-md-start">
+      <div class="col-12 col-md-4">
+        <i class="fa-solid fa-phone me-2 fs-4"></i>
+        <span>Didn't find what you were looking for? <a href="#" class="text-white">Contact us</a></span>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="fa-regular fa-face-smile me-2 fs-4"></i>
+        <span>How can we help you today? <a href="#" class="text-white">Help Center</a></span>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="fa-solid fa-circle-radiation me-2 fs-4"></i>
+        <span>We’d love to hear what you think! <a href="#" class="text-white">Give Feedback</a></span>
+      </div>
+    </div>
+    <div class="row py-4 text-white align-items-center">
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <small class="text-secondary">Copyright © Merto. All Rights Reserved</small>
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <img src="../Images/payment-icons-1.png" class="img-fluid" alt="Payments">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+
+body{
+    box-sizing: border-box;
+}
+.font-30{
+    font-size: 76px;
+}
+.col-style{
+    color: #17e04f;
+    font-size: 10px;
+}
+.btn-custom {
+    background: #000;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+}
+.btn-custom:hover {
+    background-color: #de1010;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  background-color: #ebeef0 !important;
+  box-shadow: none !important;
+}
+.filter-image{
+    transition: 0.4s ease;
+}
+.filter-image:hover{
+    filter: brightness(130%);
+}
+.new-edit{
+    transition: all 0.3s ease;
+}
+.new-edit:hover{
+    background-color: white;
+    border: 1px solid black !important;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+.bg-brown{
+    background-color: #a06c30;
+}
+.bg-burg{
+    background-color: #560403;
+}
+.bg-cool{
+    background-color: #a93d54;
+}
+.bg-deep{
+    background-color: #a21f44;
+}
+
+
+
+.height-50{
+    height: 250px;
+    overflow: auto;
+}
